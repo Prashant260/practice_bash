@@ -1,0 +1,161 @@
+baseURL: /
+
+theme: aafu
+languageCode: en-us
+build:
+  writeStats: false
+params:
+  title: "Prashant theme"
+  author: "Prashant Choudhary"
+  description: personal portfolio
+ # copyright: >-
+    # powered by [hugo](https://gohugo.io/) & deployed on
+  #  [Cloudflare](https://www.cloudflare.com/)
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false  
+
+  profile:
+    name: "Prashant Choudhary"
+   # tagline: Title
+    title: "DevOps Engineer"
+    photo: prashant.jpg
+  social:
+    title: Links
+    list:
+      - icon: fab fa-linkedin-in
+        url: "https://www.linkedin.com/in/prashant-choudhary-392a1620b/"
+        title: LinkedIn
+     # - icon: fab fa-stack-overflow
+      #  url: "#"
+       # title: StackOverflow
+      - icon: fab fa-github
+        url: "https://github.com/Prashant260"
+        title: GitHub
+      #- icon: fab fa-twitter
+       # url: "#"
+        #title: Twitter
+      #- icon: fab fa-orcid
+       # url: "#"
+        #title: Orcid
+      #- icon: ai ai-google-scholar
+       # url: "#"
+        #title: Google Scholar
+      #- icon: fab fa-researchgate
+       # url: "#"
+        #title: ResearchGate
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    - item: experience
+    - item: education
+   # - item: publication
+    - item: project
+    - item: skill
+    - item: hobby
+  aboutme:
+    title: About Me
+    icon: fas fa-user
+    description: "👋 Hi, I'm Prashant Choudhary, a passionate and curious final-year B.Tech student with a strong interest in DevOps, Cloud Computing, and Backend Development. I enjoy building reliable and scalable systems, automating workflows, and continuously learning new technologies. I've worked on projects involving Docker, Kubernetes, Jenkins, GitHub Actions, and more."
+  experience:
+    title: Experiences
+    icon: fas fa-briefcase
+    list:
+      - position: DevOps Engineer Intern
+        dates: april 2025 - *may 2025*
+        company: Elevate Labs
+        details: |-
+         • Contributed to DevOps projects using Kubernetes, Docker, and AWS.
+         
+         • Helped manage infrastructure with Terraform, following IaaC principles.
+         
+         • Learned CI/CD pipelines (GitHub Actions) and monitoring tools (Prometheus).
+         
+         • Awarded 'Best Performer' for problem-solving and commitment.
+  # - position: Job Title
+  #   dates: 2018 - 2019
+  #   url: "#"
+  #   company: Company Name
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: B.Tech in IT
+        college: Barkatullah University Institute of Technology
+        dates: 2022 - 2026
+        #thesis_title: "Effect of humans on other humans: a study of human behavior."
+        #thesis_url: "#"
+      - degree: Higher Secondary (CBSE)
+        college: L.S.S.M. school, Sagar (72%)
+        dates: 2020- 2022
+       # thesis_title: "()."
+        #thesis_url: "#"
+      - degree: High School (M.P. Board)
+        college: S.V.N. high school, Sagar (93%)
+        dates: 2019 - 2020
+        # - title: >-
+      #     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      #     eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      #   authors: "F Last, F Second, P secondary"
+      #   date: "2018"
+      #   journal: "Journal of Field 52 (16), 9033-9044"
+      #   url: "#"
+      #   type: Journal Articles
+      # - title: >-
+      #     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      #     eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      #   authors: "F Last, F Second, P secondary"
+      #   date: "2018"
+      #   journal: "Journal of Field 52 (16), 9033-9044"
+      #   url: "#"
+      #   type: Journal Articles
+      - title: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        authors: "F Last, F Second, P secondary"
+        date: "2018"
+        journal: "Journal of Field 52 (16), 9033-9044"
+        url: "#"
+        type: Proceedings
+  project:
+    title: Projects
+    icon: fas fa-project-diagram
+    list:
+    - title: Self Healing Infrastructure
+      url: "https://github.com/Prashant260/self_healing-_infrastructure"
+      description: |
+        This project sets up a self-healing system to automatically detect and remedy service outages. It uses:
+
+        -    -Prometheus for collecting metrics and monitoring service health.
+        -    -Alertmanager for processing alerts based on Prometheus rules.
+        -    -Ansible for executing automated recovery tasks such as restarting services.
+        -    -An optional Python Flask webhook receiver to bridge Alertmanager and Ansible.
+    - title: Todo-app (shell script)
+      url: "https://github.com/Prashant260/Bash-projects/blob/main/todo.sh"
+      description: |
+        "This project is a simple command-line todo application implemented in a shell script."
+    # - title: Project 3
+      #  url: "#"
+       # description: Description of the project
+    # - title: Project 4
+    #    url: "#"
+    #    description: Description of the project
+  skill:
+    title: Skills
+    panelId: skill-panel
+    icon: fas fa-cogs
+    list:
+      - skill: "linux, docker, kubernetes, ansible, terraform, git"
+        skillrating: 90
+      - skill: "shell scripting, java"
+        skillrating: 80
+      - skill: "SQL"
+        skillrating: 50
+  hobby:
+    title: Hobbies
+    icon: fas fa-gamepad
+    list:
+      - hobby: Cooking
+      - hobby: chess
+      - hobby: music
